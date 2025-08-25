@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Love Life</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        font-weight: bold;
+        color: #ff4d6d;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        width: 80px;
+        height: 3px;
+        background: #ffb6c1;
+        display: block;
+        margin: 10px auto;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span class="brand-primary">My</span
+          ><span class="brand-accent">Portfolio</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="friends.html">Friends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="family.html">Family</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="church.html">Church</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="lovelife.html">Love Life</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      class="sub-hero love-hero d-flex align-items-center text-center text-light"
+    >
+      <div class="container">
+        <h1 class="fw-bold display-5 sub-hero-title">
+          My <span class="highlight">Love Life</span>
+        </h1>
+        <p class="lead">
+          “Every love story is beautiful, but ours is my favorite.”
+        </p>
+      </div>
+    </header>
+
+    <!-- Love Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-5 text-center">A Special Chapter of My Life</h2>
+        <div class="row g-4 align-items-center">
+          <!-- Image -->
+          <div class="col-md-6">
+            <div class="card shadow-lg border-0 h-100">
+              <img
+                src="img/memories.jpg"
+                class="card-img-top love-img"
+                alt="Love Life"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-danger">❤️ Moments Together</h5>
+                <p class="card-text">
+                  Cherishing every memory and adventure shared with someone
+                  special.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eye-catching Text -->
+          <div class="col-md-6">
+            <div class="p-4 rounded-4 shadow-sm bg-white love-text">
+              <h3 class="fw-bold text-danger mb-3">💞 Our Journey</h3>
+              <p class="fs-5 fst-italic">
+                My love life is more than just a story — it’s
+                <span class="highlight"
+                  >a journey of trust, laughter, and endless dreams</span
+                >.
+              </p>
+              <p class="fs-6">
+                Through ups and downs, we’ve built a bond that inspires me every
+                day. Every smile, every adventure, and every quiet moment makes
+                my life more colorful.
+              </p>
+              <blockquote class="blockquote text-center mt-4">
+                <p class="mb-0 text-danger">
+                  “With you, I have not just love, but a lifetime of happiness.”
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+      <p>
+        &copy; 2025 My Portfolio | Josephine Acedilla
+        <br /><br />
+        Email: josephinea@davidhenry.school.nz
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".custom-navbar");
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
